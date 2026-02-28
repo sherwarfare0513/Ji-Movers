@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji Movers | Movers & Packers In Abu Dhabi</title>
+    <meta name="description" content="Ji Movers offers residential, office, commercial and warehouse moving services in Abu Dhabi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="floating-whatsapp" href="https://wa.me/971522013220" target="_blank" rel="noopener">WhatsApp</a>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-row">
+            <a class="logo" href="#home"><img src="ji-logo.svg" alt="Ji logo"></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Our Services</a>
+                <a href="#process">Our Process</a>
+                <a href="#addons">Free Add-Ons</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="top-information">
+                <a class="phone-chip" href="tel:+971522013220"><i class="fa fa-phone"></i> <span>+971 52 201 3220</span></a>
+                <a class="wa-chip" href="https://wa.me/971522013220" target="_blank" rel="noopener"><i class="fa fa-whatsapp"></i> <span>WhatsApp</span></a>
+            </div>
+            <button class="menu-btn" id="menuBtn" aria-label="Open navigation">Menu</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner" id="home">
+            <div class="container banner-grid">
+                <div class="banner-copy">
+                    <p class="tag">Premium Service At Affordable Prices</p>
+                    <h1>Trusted Movers In <span>Abu Dhabi</span></h1>
+                    <p>Over 9 years of moving experience. 7 days a week complete packing and moving service.</p>
+
+                    <div class="review-slider" id="reviewSlider">
+                        <article class="review active">
+                            "Excellent moving team, clean packing and fast setup."
+                            <strong>- Sarah K</strong>
+                        </article>
+                        <article class="review">
+                            "On-time service with very professional staff."
+                            <strong>- Ahmed R</strong>
+                        </article>
+                        <article class="review">
+                            "Best experience for office relocation in Abu Dhabi."
+                            <strong>- Umair M</strong>
+                        </article>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="btn" href="#contact">Get Quote</a>
+                        <a class="btn ghost" href="https://wa.me/971522013220" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+
+                <aside class="callback-card">
+                    <h2>Get A Callback In 5 Minutes</h2>
+                    <form class="callback-form" id="enquiryForm" action="mail.php" method="post">
+                        <input type="text" name="full_name" placeholder="Name" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <select name="move_type" required>
+                            <option value="" selected disabled>Select Your Move</option>
+                            <option value="Studio Move">Studio Move</option>
+                            <option value="1 BHK Move">1 BHK Move</option>
+                            <option value="2 BHK Move">2 BHK Move</option>
+                            <option value="3+ BHK Move">3+ BHK Move</option>
+                            <option value="Office Move">Office Move</option>
+                            <option value="Commercial Move">Commercial Move</option>
+                            <option value="Warehouse Move">Warehouse Move</option>
+                        </select>
+                        <input type="text" name="from_location" placeholder="From Location" required>
+                        <input type="text" name="to_location" placeholder="To Location" required>
+                        <select name="submit_route" id="submitRoute" class="route-select" required>
+                            <option value="" selected disabled>Choose Submit Option</option>
+                            <option value="whatsapp">Send Directly to WhatsApp</option>
+                            <option value="email">Send to Email</option>
+                            <option value="server">Send to Website Server</option>
+                        </select>
+                        <button type="submit">Submit Enquiry</button>
+                        <p class="form-status" id="formStatus" aria-live="polite"></p>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container about-grid">
+                <div>
+                    <h2>Let <span>Ji Movers</span> Pack & Move For You</h2>
+                    <p>When you choose Ji Movers, we make your moving day simple, safe, and stress free. Our trained team handles packing, dismantling, loading, transport, unloading, and setup with full care.</p>
+                </div>
+                <div class="counters">
+                    <article>
+                        <img src="Moves completed.jpeg" alt="Moves completed">
+                        <strong class="count" data-target="700">0</strong>
+                        <p>Moves Completed</p>
+                    </article>
+                    <article>
+                        <img src="Moving Staff.jpeg" alt="Moving staff">
+                        <strong class="count" data-target="35">0</strong>
+                        <p>Moving Staff</p>
+                    </article>
+                    <article>
+                        <img src="Covered Trucks.jpeg" alt="Covered trucks">
+                        <strong class="count" data-target="12">0</strong>
+                        <p>Covered Trucks</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="content-heading">
+                    <h4>End-To-End <span>Moving Solution</span><br><strong>Hassle Free</strong></h4>
+                </div>
+                <div class="service-grid">
+                    <article class="service-box">
+                        <img src="Residential Moving.jpeg" alt="Residential moving" class="service-image">
+                        <div class="service-box-text">
+                            <h5>Residential Moving</h5>
+                            <p>As long-serving experts in all types of Abu Dhabi house moves, our highly trained and fully insured team can handle even the trickiest and most complex furniture loading and moving jobs, including delivering and assembling them with full respect for your new home.</p>
+                            <a href="#" class="open-modal" data-modal="modal-residential">View Prices</a>
+                        </div>
+                    </article>
+                    <article class="service-box">
+                        <img src="Commercial Moving.jpeg" alt="Commercial moving" class="service-image">
+                        <div class="service-box-text">
+                            <h5>Commercial Moving</h5>
+                            <p>Be it a school, a hospital, or a retail shop, we have the means and know-how to provide you with a seamless moving experience while handling delicate and expensive equipment with utmost care.</p>
+                            <a href="#" class="open-modal" data-modal="modal-commercial">View Prices</a>
+                        </div>
+                    </article>
+                    <article class="service-box">
+                        <img src="Office Moving.jpeg" alt="Office moving" class="service-image">
+                        <div class="service-box-text">
+                            <h5>Office Moving</h5>
+                            <p>We offer comprehensive office relocation services for large and small moves across the Emirates, with site visits and detailed quotations before execution.</p>
+                            <a href="#" class="open-modal" data-modal="modal-office">View Prices</a>
+                        </div>
+                    </article>
+                    <article class="service-box">
+                        <img src="Warerhouse Moving.jpeg" alt="Warehouse moving" class="service-image">
+                        <div class="service-box-text">
+                            <h5>Warehouse Moving</h5>
+                            <p>Moving an entire warehouse with heavy equipment requires expertise. Our team provides organized planning, careful handling, and safe transport from start to finish.</p>
+                            <a href="#" class="open-modal" data-modal="modal-warehouse">View Prices</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-strip">
+            <div class="container cta-wrap">
+                <img src="We callback within 5 minutes.jpeg" alt="Callback support" class="cta-photo">
+                <div>
+                    <h3>We Callback Within 5 Minutes</h3>
+                    <p>Video survey and quotation can also be arranged online.</p>
+                </div>
+                <a class="btn" href="tel:+971522013220">Call Us: +971 52 201 3220</a>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="container">
+                <h2>Our Step By Step Process</h2>
+                <div class="process-grid">
+                    <article class="process-card">
+                        <div class="process-icon-wrap"><img src="Dismantling.jpeg" alt="Dismantling" class="process-image"></div>
+                        <h3>Dismantling</h3>
+                    </article>
+                    <article class="process-card soft">
+                        <div class="process-icon-wrap"><img src="Packing.jpeg" alt="Packing" class="process-image"></div>
+                        <h3>Packing</h3>
+                    </article>
+                    <article class="process-card">
+                        <div class="process-icon-wrap"><img src="Loading.jpeg" alt="Loading" class="process-image"></div>
+                        <h3>Loading</h3>
+                    </article>
+                    <article class="process-card soft">
+                        <div class="process-icon-wrap"><img src="Transportation.jpeg" alt="Transportation" class="process-image"></div>
+                        <h3>Transportation</h3>
+                    </article>
+                    <article class="process-card">
+                        <div class="process-icon-wrap"><img src="Unloading.jpeg" alt="Unloading" class="process-image"></div>
+                        <h3>Unloading</h3>
+                    </article>
+                    <article class="process-card soft">
+                        <div class="process-icon-wrap"><img src="Unpacking.jpeg" alt="Unpacking" class="process-image"></div>
+                        <h3>Unpacking</h3>
+                    </article>
+                    <article class="process-card">
+                        <div class="process-icon-wrap"><img src="Assembly.jpeg" alt="Assembly" class="process-image"></div>
+                        <h3>Assembly</h3>
+                    </article>
+                    <article class="process-card soft">
+                        <div class="process-icon-wrap"><img src="Paint fixes & cleaning.jpeg" alt="Paint fixes and cleaning" class="process-image"></div>
+                        <h3>Paint Fixes & Cleaning</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="addons" id="addons">
+            <div class="container">
+                <h2>The Perks of Our Service</h2>
+                <div class="addon-grid">
+                    <article>
+                        <img src="Free pizza for 4 people.jpeg" alt="Free pizza for 4 people" class="addon-image">
+                        <h3>Free Pizza For 4 People</h3>
+                    </article>
+                    <article>
+                        <img src="Paint Touchup.jpeg" alt="Paint touchup" class="addon-image">
+                        <h3>Paint Touchup</h3>
+                    </article>
+                    <article>
+                        <img src="Miner Furniture Repair.jpeg" alt="Minor furniture repairs" class="addon-image">
+                        <h3>Minor Furniture Repairs</h3>
+                    </article>
+                    <article>
+                        <img src="post moving image.jpeg" alt="Post move cleaning" class="addon-image">
+                        <h3>Post Move Cleaning</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modal-residential" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-residential-title">
+            <button class="modal-close" type="button" data-close-modal>&times;</button>
+            <div class="modal-service">
+                <img src="Residential Moving.jpeg" alt="Residential moving details">
+                <div>
+                    <h3 id="modal-residential-title">Residential Moving</h3>
+                    <p>As experienced Abu Dhabi home movers, our fully trained team handles complete residential relocation with careful dismantling, secure packing, protected loading, transport, unloading, and setup at your new home.</p>
+                    <p>From studio apartments to villas, we plan your move step by step so furniture, appliances, and fragile items are moved safely and on time.</p>
+                </div>
+            </div>
+            <div class="pricing-table-wrap">
+                <h4>Pricing</h4>
+                <table class="pricing-table">
+                    <tr><th>Move Size</th><th>Same Building</th><th>Same Area / City</th><th>Other City</th><th>Helpers</th><th>Trucks</th></tr>
+                    <tr><td>Studio</td><td>AED 750</td><td>AED 950</td><td>AED 1300</td><td>3</td><td>1</td></tr>
+                    <tr><td>1 BHK</td><td>AED 950</td><td>AED 1150</td><td>AED 1575</td><td>4</td><td>1</td></tr>
+                    <tr><td>2 BHK / Villa</td><td>AED 1350</td><td>AED 1700</td><td>AED 2500</td><td>6</td><td>2</td></tr>
+                    <tr><td>3 BHK / Villa</td><td>AED 1850</td><td>AED 2300</td><td>AED 3000</td><td>8</td><td>3</td></tr>
+                    <tr><td>4 BHK / Villa</td><td colspan="5">Survey Required</td></tr>
+                    <tr><td>5 BHK / Villa</td><td colspan="5">Survey Required</td></tr>
+                </table>
+            </div>
+            <div class="modal-cta">
+                <p><strong>*Same building moves usually do not require moving trucks.</strong></p>
+                <div class="modal-cta-actions">
+                    <a href="tel:+971522013220">Call: +971 52 201 3220</a>
+                    <a href="https://wa.me/971522013220" target="_blank" rel="noopener">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-commercial" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-commercial-title">
+            <button class="modal-close" type="button" data-close-modal>&times;</button>
+            <div class="modal-service">
+                <img src="Commercial Moving.jpeg" alt="Commercial moving details">
+                <div>
+                    <h3 id="modal-commercial-title">Commercial Moving</h3>
+                    <p>Whether it is a school, hospital, showroom, or retail outlet, our team provides structured commercial relocation with minimum interruption to your business activity.</p>
+                    <p>Delicate and expensive equipment is packed and moved with safety protocols so everything reaches the destination in proper condition.</p>
+                </div>
+            </div>
+            <div class="modal-cta">
+                <p><strong>Request a quote for your commercial move today.</strong></p>
+                <div class="modal-cta-actions">
+                    <a href="tel:+971522013220">Call: +971 52 201 3220</a>
+                    <a href="https://wa.me/971522013220" target="_blank" rel="noopener">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-office" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-office-title">
+            <button class="modal-close" type="button" data-close-modal>&times;</button>
+            <div class="modal-service">
+                <img src="Office Moving.jpeg" alt="Office moving details">
+                <div>
+                    <h3 id="modal-office-title">Office Moving</h3>
+                    <p>We provide complete office relocation for small and large businesses across Abu Dhabi, including pre-move visit and planning support.</p>
+                    <p>From workstations and filing systems to meeting room furniture, our team handles dismantling, packing, transport, and re-setup professionally.</p>
+                </div>
+            </div>
+            <div class="modal-cta">
+                <p><strong>Book a free office move consultation.</strong></p>
+                <div class="modal-cta-actions">
+                    <a href="tel:+971522013220">Call: +971 52 201 3220</a>
+                    <a href="https://wa.me/971522013220" target="_blank" rel="noopener">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-warehouse" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-warehouse-title">
+            <button class="modal-close" type="button" data-close-modal>&times;</button>
+            <div class="modal-service">
+                <img src="Warerhouse Moving.jpeg" alt="Warehouse moving details">
+                <div>
+                    <h3 id="modal-warehouse-title">Warehouse Moving</h3>
+                    <p>Warehouse shifting requires technical handling for heavy racks, machinery, stock materials, and sensitive inventory movement.</p>
+                    <p>Our specialized team plans loading sequence, transport safety, and unloading arrangement so your warehouse relocation is controlled and efficient.</p>
+                </div>
+            </div>
+            <div class="modal-cta">
+                <p><strong>Share your warehouse size for a tailored quote.</strong></p>
+                <div class="modal-cta-actions">
+                    <a href="tel:+971522013220">Call: +971 52 201 3220</a>
+                    <a href="https://wa.me/971522013220" target="_blank" rel="noopener">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div>
+                <h4>Ji Movers</h4>
+                <p>Professional packing and moving services in Abu Dhabi.</p>
+                <p>Copyright © 2026 Ji Movers. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#addons">Free Add-Ons</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <p><strong>Call:</strong><br><a href="tel:+971522013220">+971 52 201 3220</a></p>
+                <p><strong>Email Address:</strong><br><a href="mailto:support@jimovers.com">support@jimovers.com</a></p>
+                <p><strong>WhatsApp:</strong><br><a href="https://wa.me/971522013220" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+                <p>Abu Dhabi - United Arab Emirates</p>
+            </div>
+            <div>
+                <iframe title="Abu Dhabi Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465130.3070331526!2d54.27841801862765!3d24.38719838492028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1648999936458!5m2!1sen!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
