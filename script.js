@@ -149,34 +149,12 @@ if (enquiryForm) {
             `Move Type: ${moveType}\n` +
             `From: ${fromLocation}\n` +
             `To: ${toLocation}`;
+        const encodedMessage = encodeURIComponent(rawMessage);
 
         if (route === "whatsapp") {
-            setFormStatus("Sending enquiry directly to WhatsApp...");
-            try {
-                const response = await fetch("send_whatsapp.php", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                        full_name: name,
-                        phone,
-                        email,
-                        move_type: moveType,
-                        from_location: fromLocation,
-                        to_location: toLocation,
-                        message: rawMessage,
-                    }),
-                });
-
-                const payload = await response.json().catch(() => ({}));
-                if (!response.ok || !payload.ok) {
-                    throw new Error(payload.error || "WhatsApp API request failed");
-                }
-
-                enquiryForm.reset();
-                setFormStatus("Enquiry sent directly to WhatsApp successfully.");
-            } catch (error) {
-                setFormStatus("Direct WhatsApp send failed. Please configure server API keys.", true);
-            }
+            const waUrl = `https://wa.me/971522013220?text=${encodedMessage}`;
+            window.open(waUrl, "_blank", "noopener");
+            setFormStatus("Opened WhatsApp with your enquiry details.");
             return;
         }
 
