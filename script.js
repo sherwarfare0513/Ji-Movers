@@ -2,6 +2,7 @@ const header = document.getElementById("siteHeader");
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 const reviews = Array.from(document.querySelectorAll(".review"));
+const reviewDots = Array.from(document.querySelectorAll(".review-dot"));
 const countElements = Array.from(document.querySelectorAll(".count"));
 const revealTargets = Array.from(document.querySelectorAll(
     ".process h2, .process-card"
@@ -25,10 +26,19 @@ navLinks.querySelectorAll("a").forEach((link) => {
 
 if (reviews.length > 1) {
     let reviewIndex = 0;
+
+    const setActiveReview = (index) => {
+        reviews.forEach((item, i) => item.classList.toggle("active", i === index));
+        reviewDots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+        reviewIndex = index;
+    };
+
+    reviewDots.forEach((dot, i) => {
+        dot.addEventListener("click", () => setActiveReview(i));
+    });
+
     setInterval(() => {
-        reviews[reviewIndex].classList.remove("active");
-        reviewIndex = (reviewIndex + 1) % reviews.length;
-        reviews[reviewIndex].classList.add("active");
+        setActiveReview((reviewIndex + 1) % reviews.length);
     }, 3200);
 }
 
